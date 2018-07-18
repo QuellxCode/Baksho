@@ -1,0 +1,172 @@
+<!-- <android.support.v7.widget.Toolbar
+     android:id="@+id/tool_bar"
+     android:layout_width="match_parent"
+     android:layout_height="200dp"
+   >
+ </android.support.v7.widget.Toolbar>-->
+
+
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:coverflow="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/DrawerLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="7dp"
+
+    >
+
+
+    <!--   <include
+           android:id="@+id/tool_bar"
+           layout="@layout/tool_bar">
+       </include>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+
+            android:id="@+id/top_slider"
+            android:layout_width="match_parent"
+            android:layout_height="300dp">
+
+
+            <com.daimajia.slider.library.SliderLayout
+                android:id="@+id/slider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <!--
+                        <ImageView
+                            android:id="@+id/btn_menu"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_alignLeft="@+id/slider"
+                            android:layout_marginLeft="15dp"
+
+                            android:src="@drawable/menu_purp"/>
+                        <ImageView
+                            android:id="@+id/btn_submenu"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                           android:layout_alignRight="@+id/slider"
+                            android:layout_marginRight="15dp"
+
+
+                            android:src="@drawable/submenu_purp"/>-->
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="-30dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/logo"
+
+                />
+
+
+        </RelativeLayout>
+        <!--  <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="300dp">
+
+
+
+              <ImageView
+                  android:id="@+id/elec_logo"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="2dp"
+                  android:layout_marginLeft="-240dp"
+                  android:maxHeight="50dp"
+                  android:src="@drawable/btn_electric"/>
+
+
+
+              </RelativeLayout>-->
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/top_slider"
+            android:layout_gravity="end"
+            android:background="@color/colorBlack"
+            android:minHeight="350dp"
+            android:orientation="vertical">
+
+            <it.moondroid.coverflow.components.ui.containers.FeatureCoverFlow
+                android:id="@+id/coverflow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                coverflow:coverHeight="@dimen/cover_height"
+                coverflow:coverWidth="@dimen/cover_width"
+                coverflow:maxScaleFactor="1.5"
+                coverflow:reflectionGap="0px"
+                coverflow:rotationThreshold="0.5"
+                coverflow:scalingThreshold="0.5"
+                coverflow:spacing="0.6" />
+
+            <TextSwitcher
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerVertical="true"
+                android:paddingBottom="16dp" />
+
+        </LinearLayout>
+
+
+        <!--      <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="300dp">
+                  <ImageView
+                      android:id="@+id/img_ac"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+
+
+                      android:src="@drawable/ac"/>
+                  <ImageView
+                      android:id="@+id/img_elec"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+
+                      android:src="@drawable/electric"/>
+                  <ImageView
+                      android:id="@+id/img_ups"
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="10dp"
+
+                      android:src="@drawable/ups"/>
+
+
+
+              </RelativeLayout>-->
+
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/RecyclerView"
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</android.support.v4.widget.DrawerLayout>
+

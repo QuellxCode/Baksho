@@ -1,0 +1,123 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fullbg"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.quellxcode.baksho.Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/halfbg" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:src="@drawable/logo" />
+
+
+        <TextView
+            android:id="@+id/ImageLable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/logo"
+            android:layout_marginBottom="6dp"
+            android:layout_marginLeft="13dp"
+            android:text="UPDATE INFO"
+            android:textColor="@color/colorLabel"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edt_Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:hint="Name"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColorHint="@color/colorTheme" />
+
+    <EditText
+        android:id="@+id/edt_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Email"
+        android:imeOptions="actionNext"
+        android:inputType="textEmailAddress"
+        android:singleLine="true"
+        android:textColorHint="@color/colorTheme" />
+
+    <EditText
+        android:id="@+id/edt_Contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Contact#"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColorHint="@color/colorTheme" />
+
+    <EditText
+        android:id="@+id/edt_Address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="Address"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColorHint="@color/colorTheme" />
+
+    <EditText
+        android:id="@+id/edt_City"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:hint="City"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        android:textColorHint="@color/colorTheme" />
+
+    <Button
+        android:id="@+id/btn_Book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorTheme"
+        android:text="Book Now"
+        android:textColor="@color/textcolor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>
